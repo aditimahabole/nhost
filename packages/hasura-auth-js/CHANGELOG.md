@@ -1,5 +1,14 @@
 # @nhost/hasura-auth-js
 
+## 1.5.1
+
+### Patch Changes
+
+- 13c41fe6: Correct `nhost.auth.signIn` to allow anonymous sign-in
+  The typings were not allowing empty or undefined parameters to let users sign in anonymously. `nhost.auth.signIn()` now triggers an anonymous sign-in.
+- Updated dependencies [13c41fe6]
+  - @nhost/core@0.8.1
+
 ## 1.5.0
 
 ### Minor Changes
